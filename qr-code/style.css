@@ -46,7 +46,6 @@ img {
 }
 
 .text-wraper p {
-    font-size: 1.5rem;
     color: hsl(216, 15%, 48%);
 }
 
@@ -56,6 +55,5 @@ img {
 }
 
 .attribution a {
-    font-size: 1rem;
     color: hsl(228, 45%, 44%); 
 }
