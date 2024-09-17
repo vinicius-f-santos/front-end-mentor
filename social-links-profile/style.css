@@ -108,3 +108,10 @@ div.social-profile-content:hover a{
         padding: 3rem 0;
     }
 }
+
+@media (max-height: 500px) {
+    body {
+        height: 100%;
+        padding: 15rem 0;
+    }
+}
