@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+:root {
+    --primaryCyan: hsl(179, 62%, 43%);
+    --primaryBrightYellow: hsl(71, 73%, 54%);
+    --neutralLightGray: hsl(204, 43%, 93%);
+    --grayishBlue: hsl(218, 22%, 67%);
+}
+
+body {
+    height: 100%;
+    padding: 12rem 0;
+    background-color: var(--neutralLightGray);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    width: 90%;
+    border-radius: 3px;
+}
+
+.title {
+    font-size: 1.4rem;
+    color: var(--neutralLightGray);
+}
+
+section.subscription-introduction {
+    padding: 1rem;
+    background-color: white;
+}
+
+.subscription-introduction h1 {
+    padding: 0 0 1rem 0;
+    color: var(--primaryCyan);
+}
+
+.subscription-introduction p {
+    padding: 0.5rem 0;
+}
+
+.subscription-introduction p:nth-of-type(1) {
+    color: var(--primaryBrightYellow);
+}
+
+.subscription-introduction p:nth-of-type(2) {
+    color: var(--grayishBlue);
+}
+
+section.subscription-prices {
+    background-color: var(--primaryCyan);
+    padding: 1rem;
+}
+
+.subscription-prices p {
+    color: var(--neutralLightGray);
+    padding: 0.5rem 0;
+}
+
+.subscription-prices span:nth-child(2) {
+    color: lightgray;
+    position: relative;
+    top: -10px;
+    left: 10px;
+}
+
+.subscription-prices span:nth-child(1) {
+    font-size: 2.5rem;
+}
+
+.subscription-prices input {
+    background-color: var(--primaryBrightYellow);
+    border: 0;
+    width: 100%;
+    height: 2rem;
+    margin: 1.5rem 0 0.5rem 0;
+    color: var(--neutralLightGray);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section.subscription-information {
+    background-color: #49bebd;
+    padding: 1rem;
+    color: var(--neutralLightGray);
+}
+
+.subscription-information p {
+    width: 90%;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+}
+
+@media (min-width: 375px) {
+    body {
+        padding: 4rem 0;
+    }
+}
+
+@media (max-height: 375px) {
+    body {
+        padding: 12rem 0;
+    }
+
+    .grid-container {
+        width: 80%;
+    }
+}
