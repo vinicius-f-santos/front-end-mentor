@@ -3,3 +3,108 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: Inter;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root {
+    --grey900: hsl(0, 0%, 8%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey700: hsl(0, 0%, 20%);
+    --white: hsl(0, 0%, 100%);
+    --green: hsl(75, 94%, 57%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--grey900);
+    font-size: 1.6rem;
+    height: 100vh;
+}
+
+div.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+
+main.social-content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    align-self: center;
+    width: 42rem;
+    background-color: var(--grey800);
+    text-align: center;
+    padding: 3rem 0;
+    border-radius: 1.5rem;
+}
+
+div.image {
+    padding: 1rem 0;
+}
+
+div.image img {
+    width: 10rem;
+    border-radius: 50%;
+}
+
+h1 {
+    padding: 1rem 0 0 0;
+    font-size: 2.8rem;
+    color: var(--white);
+}
+
+h2 {
+    padding: 0.5rem 0 0 0;
+    font-size: 1.5rem;
+    color: var(--green);
+}
+
+p {
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+div.social-profile-content {
+    width: 80%;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background-color: var(--grey700);
+    border-radius: 1rem;
+}
+
+div.social-profile-content a {
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: none;
+}
+
+div.social-profile-content:hover  {
+    background-color: var(--green);
+}
+
+div.social-profile-content:hover a{
+    color: black;
+}
+
+
+@media (max-width: 500px) {
+    main.social-content {
+        width: 90%;
+    }
+
+    body {
+        height: 100%;
+        padding: 3rem 0;
+    }
+}
