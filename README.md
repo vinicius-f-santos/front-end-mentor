@@ -1,2 +1,1 @@
-# front-end-mentor
-front-end mentor challenges
+# Repositório para os challenges do front-end-mentor
