@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Karla", sans-serif;
 }
 
 :root {
@@ -14,8 +13,9 @@
 
 body {
     height: 100%;
-    padding: 12rem 0;
+    padding: 18rem 0;
     background-color: var(--neutralLightGray);
+    font-family: "Karla", sans-serif;
 }
 
 .flex-container {
@@ -28,11 +28,11 @@ body {
 .grid-container {
     display: grid;
     width: 90%;
-    border-radius: 3px;
 }
 
 .title {
-    font-size: 1.4rem;
+    font-weight: bold;
+    font-size: 1.5rem;
     color: var(--neutralLightGray);
 }
 
@@ -42,7 +42,7 @@ section.subscription-introduction {
 }
 
 .subscription-introduction h1 {
-    padding: 0 0 1rem 0;
+    padding: 2rem 0 1.5rem 0;
     color: var(--primaryCyan);
 }
 
@@ -56,6 +56,8 @@ section.subscription-introduction {
 
 .subscription-introduction p:nth-of-type(2) {
     color: var(--grayishBlue);
+    padding: 1rem 0 2rem 0;
+    line-height: 2rem;
 }
 
 section.subscription-prices {
@@ -68,6 +70,11 @@ section.subscription-prices {
     padding: 0.5rem 0;
 }
 
+.subscription-prices span:nth-child(1) {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
 .subscription-prices span:nth-child(2) {
     color: lightgray;
     position: relative;
@@ -75,19 +82,16 @@ section.subscription-prices {
     left: 10px;
 }
 
-.subscription-prices span:nth-child(1) {
-    font-size: 2.5rem;
-}
-
 .subscription-prices input {
     background-color: var(--primaryBrightYellow);
     border: 0;
     width: 100%;
-    height: 2rem;
+    height: 3rem;
     margin: 1.5rem 0 0.5rem 0;
     color: var(--neutralLightGray);
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1.2rem;
 }
 
 section.subscription-information {
@@ -98,22 +102,66 @@ section.subscription-information {
 
 .subscription-information p {
     width: 90%;
-    line-height: 1.5rem;
-    padding: 1rem 0;
+    line-height: 1.7rem;
+    padding: 0.8rem 0;
 }
 
 @media (min-width: 375px) {
     body {
-        padding: 4rem 0;
+        padding: 20em 0;
     }
 }
 
-@media (max-height: 375px) {
+@media (min-height: 200px) {
     body {
-        padding: 12rem 0;
+        padding: 20rem 0;
     }
 
     .grid-container {
         width: 80%;
+    }
+
+    .subscription-introduction h1 {
+        padding: 2rem 0 1.5rem 0;
+    }
+
+    .subscription-introduction p:nth-of-type(2) {
+        padding: 1rem 0 2rem 0;
+        line-height: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .grid-container {
+        width: 700px;
+        grid-template-columns: 4fr 2fr 2fr;
+    }
+
+    .subscription-introduction {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .introduction-content-box {
+        padding: 0 2rem;
+    }
+
+    .prices-content-box {
+        padding: 1rem 2rem 0 2rem;
+    }
+
+    .subscription-information {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .information-content-box {
+        padding: 0.8rem 2rem 0 2rem;
     }
 }
