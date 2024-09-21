@@ -1,0 +1,20 @@
+.preparation-time-list {
+    background-color: hsl(332, 51%, 32%, 0.3);
+    border-radius: 1em;
+    padding: 0.5em 2em 1em 2em;
+    margin: 0.5em 0 1em 0;
+}
+
+h1 {
+    font-size: 2em;
+    padding: 1.2em 0 0 0;
+}
+
+h3 {
+    margin-bottom: 1em;
+    color: var(--rose800);
+}
+
+p {
+    padding: 1.5em 0;
+}
